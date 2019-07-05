@@ -1,0 +1,1900 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script type="text/javascript"></script>
+        <style type="text/css">
+            [ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak {
+                display:none!important
+            }
+        </style>
+        <link type="text/css" rel="stylesheet" href="https://www.simplilearn.com/static_ssvc/css/default.1555582021.css" />
+        <link type="text/css" rel="stylesheet" href="https://www.simplilearn.com/static_ssvc/css/core.1503474616.css" />
+        <link async type="text/css" rel="stylesheet" href="https://www.simplilearn.com/static_ssvc/css/font_v2.1503293258.css" />
+        <link href="https://www.simplilearn.com/static_ssvc/css/country/in.css" media="screen" rel="stylesheet" type="text/css" >                <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    </head>
+         <body class = "">
+                <!-- body content start -->
+                    <header id="header">
+                
+            </header>
+
+
+            
+
+        <div class="wrapper inner-wrapper ">
+            <!-- header start  -->
+
+            <!-- header end -->
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/external/frameworks/jquery.latest.1503293258.js"></script>
+        <script type="text/javascript">
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-32079340-1']);
+            _gaq.push(['_setDomainName', 'simplilearn.com']);
+            _gaq.push(['_addIgnoredRef', 'http://lms.simplilearn.com']);
+            _gaq.push(['_trackPageview']);
+            setTimeout("_gaq.push(['_trackEvent', '30_seconds', 'read','',0,true])", 30000);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+        </script>
+<div ng-app="SSVC" ng-controller="CheckoutDetailsController" ng-init="fetchCourseDetails('j1f6dfua2bfespdfodrpc5iao1','8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b');setRazorPayOrder();setgetNBPref();isMobilePage();" id="ssvcApp">
+<div class="inner-ssvc">
+<div class="course_summary_wrap">
+    <div class="inner_div course_summary_div" ng-style="cartItemStyle"
+         style="-webkit-transition: height 0.3s ease-in;-moz-transition: height 0.3s ease-in;transition: height 0.3s ease-in;">
+    	<div class="summary_inner">
+    		<div class="summary_heading active_heading">Course Summary</div>
+    	</div>
+        <span class="error-occured" ng-cloak ng-class="(fetchCartDetailsMsg == '')?'hidden_class':''" ng-bind="fetchCartDetailsMsg"></span>
+                    <div class="summary-section">
+                                                <div class="inner_summary">
+                                    <div class="course-summary-section free-trail-wrap">
+                    <div class="details-header header-info">
+                        <div class="course-dt">COURSE</div>
+                        <!-- for Schedule use class name "crs-schedule" for venue "crs-venue"  -->
+                                                    <div class="crs-type">TYPE</div>
+                            <div class="access-days">ACCESS DAYS</div>
+                                                <div class="no-learners">No. OF LEARNERS</div>
+                        <div class="dt-price">PRICE</div>
+                    </div>
+                    <div class="details-header course-summary-info">
+                      <div class="course-dt course-img">
+                       <a href="https://www.simplilearn.com/mobile-and-software-development/java-javaee-soa-development-training"><img src="https://www.simplilearn.com/ice9/course_images/bundle313x225/Big-Data-Hadoop-Architect.svgz" alt="Course img url"></a>
+                        <h4><a href="javascript:history.back()">Big Data Architect</a></h4>
+                        </div>
+                                                <div class="crs-type">
+                         <span>Online Classroom </span>
+                        </div>
+                        <div class="access-days life-time-access">
+                                                                                                                <span>Live Online Classes: <b>90 Days</b></span>
+                                                            <span>Self Learning: <b>Lifetime</b></span>
+                                                </div>
+                                                                        <div class="no-learners">
+                         <span>
+                          1                         </span>
+                        </div>
+                        <div class="dt-price">
+                         <span>&#8377; 24,599.00</span>
+                        </div>
+                      </div>
+                   </div>
+                         
+                        
+             </div>
+             </div>
+                                 <div class="discount" ng-cloak="" >
+                     
+                        
+                     
+                        <p class="coupon-block" ng-style="{'display':(couponAppliedText!='')?'inline-block':'none'}">
+                            <span class="discount-price" ng-bind-html="to_trusted(couponAppliedText)"></span><span  class="coupon-cancel" ng-click="removeCoupon('j1f6dfua2bfespdfodrpc5iao1','8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b')"></span>
+                        </p>
+                                                    <p ng-if="generalDetails.service_tax_string != ''" class="service-taxblock">
+                                
+                                <span class="discount-price service-dis"> <span ng-bind-html="generalDetails.currency_symbol | to_trusted"></span> <span ng-bind="'' + generalDetails.service_tax"></span></span>
+                            </p>
+                            
+                               
+                        <button type="button" class="btn btn-warning summary-btn" ng-click="collapseCourseSummary($event);fetchNetBankingPrefrences($event);createPaymentOrder('8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b');" ng-mobile-click="collapseCourseSummary($event);fetchNetBankingPrefrences($event);createPaymentOrder('8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b');">PROCEED</button>
+
+                                        </div>
+        </div>
+    </div>
+    <div class="top-summary"  ng-click="expandCourseSummary($event)" style="display:none;" ng-style="cartItemStripStyle">
+                <a href="" class="summary-main">
+                        <div class="img_thumb_cor">
+                <img src="https://www.simplilearn.com/ice9/line_icons/WebApp_Java-EE-7.svgz" alt="Course img url">
+            </div>
+                        <div class="selected_course_div">
+                <div class="price-text">
+                    Java Certification Training                    <p>Online Classroom Flexi-Pass</p>
+                </div>
+                <span href="#" class="review" style="display:none;">Review Course</span>
+                <span href="#" class="course_count">1</span>
+                                    <div class="price">
+                                            <span class="total_text">Total Price</span>
+                        <span ng-bind-html="generalDetails.currency_symbol | to_trusted"></span><span class="price_total" ng-bind="' ' + generalDetails.grand_total"></span>
+                                        </div>
+                                            </div>
+         </a>
+    </div>
+</div>
+<div class="course_summary_wrap learner_det">
+    <div class="inner_div leaner_details_div" ng-style="learnerDetailsDivStyle" style="-webkit-transition: height 0.3s ease-in;-moz-transition: height 0.3s ease-in;transition: height 0.3s ease-in;">
+	   <div class="summary_inner">
+            <div class="summary_heading" ng-class="(activeCls==2)?'active_heading':''">Learner Details <span class="learner-details hidden-xs">(Email id will be your user id)</span></div>
+	   </div>
+
+        <div class="popup_country_wrapper free-trail-popup" ng-style="freeTrialPopupFlag?{'display':'block'}:{'display':'none'}">
+    <div class="modal-dialog">
+    <!-- used trail -->
+    <div class="used-details">
+        <h3><b ng-bind="freeTrialPopupMsg"></b><span ng-bind="freeTrialPopupMsg2"></span></h3>
+        <p ng-bind="freeTrialPopupMsg1"></p>
+        <input type="hidden" id="productVal" value="course"/>
+        <div class="group-btns">
+            <button class="btn btn-warning" ng-click="enrollFreeTrial('8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b')"><span ng-bind="btnTxt"></button>
+        </div>
+        <a href="https://www.simplilearn.com/mobile-and-software-development/java-javaee-soa-development-training" class="go-to-course">Go To Course Page</a>
+    </div>
+    <!-- end used trail -->
+    </div>
+</div>
+        <span class="error-occured" ng-cloak ng-class="(leanerDetailsMsg == '')?'hidden_class':''" ng-bind="leanerDetailsMsg"></span>
+        <form id='cartForm' class="" name='learnerDetailsForm' method='post'  action="" ng-style="learnerDetailsFormStyle" style="display:none;">
+            <div class="course-summary-section">
+                <span dir-custom-input="" class="discount_apply"
+                  ng-class="(learnerDetailsForm.fullName.$dirty && learnerDetailsForm.fullName.$error.required) ?'error-txt' : ''"
+                >
+                    <input dir-custom-input="" type="text" class="coupon_input" name="fullName"
+                       ng-model="userName" ng-keyup="initiateLearnerDetails()" required autocomplete="name" />
+                    <div class="floating-label">Name</div>
+                    <div class="floating-label_border"></div>
+                </span>
+                <span class="discount_apply" ng-class="((learnerDetailsForm.userEmail.$dirty && learnerDetailsForm.userEmail.$error.required) ||
+                                       (learnerDetailsForm.userEmail.$dirty && learnerDetailsForm.userEmail.$error.email)) ?
+                               'error-txt' : ''">
+					<input type="text" name="prevent_autofill" id="prevent_autofill" value="" class="hidden" />
+                    <input dir-custom-input="" name='userEmail' type="email" class="coupon_input" ng-model="userEmail" required autocomplete="email" ng-readonly=""/>
+                    <div class="floating-label">Email</div>
+                    <div class="floating-label_border"></div>
+                </span>
+                <span class="discount_apply" required ng-class="(matchEmail==0)?'error-txt':''">
+                    <input type="password" name="password_fake" id="password_fake" value="" class="hidden" />
+                    <input dir-custom-input="" type="text" class="coupon_input" name="confEmail" ng-model="confEmail" ng-paste="preventPaste($event)"  autocomplete="disable-autofill"  />
+                    <div class="floating-label" ng-class="(learnerDetailsForm.confEmail != '')?'abc':'bcd'">Confirm Email</div>
+                    <div class="floating-label_border"></div>
+                </span>
+                <span class="discount_apply" ng-class="(invalidPhone==1)?'error-txt':''">
+                    <div class="support_coutry_code">
+
+                        <div class="placeholder_wrap">
+                            <div class="select_wraper for_cun">
+                                <select class="sel_cr monospace_class" ng-model="countryCode">
+                                    <option ng-repeat="country in countryData" ng-init="setSelected(country.code,country.phnCode,'Karnataka')" ng-disabled="$index == 'COUNTRY_LINE_DIVIDER'" value="{{country.code+'-'+country.phnCode}}" ng-cloak>
+                                    {{($index != 'COUNTRY_LINE_DIVIDER')?country.code+"&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;"+country.name:'---------------------------------------------------'}}
+                                    </option>
+                                </select>
+                                <b class="caret"></b>
+                            </div>
+
+						     <span class="country_code_span" ng-bind="callingCode"></span>
+                            <input dir-custom-input="" type="text" class="" ng-model="userPhone" name="userPhone" maxlength="15"        ng-class="(learnerDetailsForm.userPhone.$dirty) ? 'error_field' : ''" ng-readonly=""
+                            />
+						     <div class="floating-label">Phone Number</div>
+						     <div class="floating-label_border"></div>
+                        </div>
+                    </div>
+                </span>
+                <span class="discount_apply" ng-if="stateData"  ng-class="(invalidState==1)?'error-txt':''">
+                    <div class="support_coutry_code state-learner">
+                        <div class="placeholder_wrap">
+                            <div class="select_wraper for_cun">
+                                <select class="sel_cr monospace_class" ng-model="stateSel" ng-change="updateState(stateSel)">
+                                    <option ng-repeat="state in stateData"  value="{{state.name}}" ng-selected="state.name == 'Karnataka'" ng-cloak>
+                                        {{state.name}}
+                                    </option>
+                                </select>
+
+
+                                <b class="caret"></b>
+                            </div>
+                            <span>(For GST)</span>
+                        </div>
+                    </div>
+                </span>
+                                <div class="form-checkbox gst-checkbox">
+                    <label>
+                        <input type="checkbox" name="gstcheck" id="gstoption" ng-model="gstcheck" ng-click="toggleGstFormField()"><span class="checkbox-material"><span class="check"></span></span>
+                                I have a GST Number (Optional)
+                    </label>
+                </div>
+                <div class="gst-field hidden" id="gst-form-fields">
+                <span dir-custom-input="" class="discount_apply" ng-class="(learnerDetailsForm.gstNumber.$dirty && learnerDetailsForm.gstNumber.$error.required) || (learnerDetailsForm.gstNumber.$dirty && learnerDetailsForm.gstNumber.$error.maxlength) || (learnerDetailsForm.gstNumber.$dirty && learnerDetailsForm.gstNumber.$error.minlength) ?'error-txt' : ''">
+                    <input dir-custom-input="" type="text" class="coupon_input" ng-model="gstNumber" name="gstNumber" required autocomplete="name" ng-minlength="15" maxlength="15"/>
+                    <div class="floating-label">Registered GST Number</div>
+                    <div class="floating-label_border"></div>
+                </span>
+                <span dir-custom-input="" class="discount_apply" ng-class="(learnerDetailsForm.companyName.$dirty && learnerDetailsForm.companyName.$error.required) ?'error-txt' : ''">
+                    <input dir-custom-input="" type="text" class="coupon_input" ng-model="companyName" name="companyName" required autocomplete="name"/>
+                    <div class="floating-label">Registered Company Name</div>
+                    <div class="floating-label_border"></div>
+                </span>
+                </div>
+                                <button type="button" class="btn btn-warning learner_proceed" ng-click="updateLearnerDetails($event,'j1f6dfua2bfespdfodrpc5iao1','8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b');createPaymentOrder('8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b');" ng-mobile-click="updateLearnerDetails($event,'j1f6dfua2bfespdfodrpc5iao1','8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b');createPaymentOrder('8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b');" >PROCEED</button>
+                            </div>
+        </form>
+    </div>
+   <div class="top-summary img_thumb_email" ng-style="learnerDetailsStripStyle">
+		<a href="" ng-click="expandLearnerDetailsDiv($event)" class="summary-main">
+			<div class="price-text">
+                            <span ng-bind="userEmail"></span>
+			<p class="hidden_cls">Login details will be shared on this ID</p>
+			</div>
+		</a>
+    </div>
+</div>
+<div class="course_summary_wrap learner_det">
+<div class="inner_div">
+	<div class="summary_inner">
+		<div class="summary_heading" ng-class="(activeCls==3)?'active_heading':''">Secure Payment</div>
+	</div>
+
+<div class="clear"></div>
+<div class="choose_payment" style="display:none;" ng-style="paymentDivStyle">
+	<div class="trns-faild-main hidden_class"
+                    >
+		<div class="trns-faild">
+			<span class="faild-icon"></span>
+				<span class="failed-msg"><div class="heading-faild">Your payment failed</div>Your payment failed at the payment gateway before reaching Simplilearn. Usually in such cases the money does not get deducted from your account. If you think the money had been deducted, your bank will refund the amount. Get in-touch with your bank in a few days.</span>
+		</div>
+	</div>
+	<div class="clear"></div>
+<ul class="pay_form">
+            <li id="credit_card" class="payment-group" ng-click='setPayment("Credit Card")'>
+            <h2 class="Credit Card" style="display:none">
+                Credit Card            </h2>
+            <div class="form">
+                <script type="text/javascript">
+var _gaq = _gaq || [];
+    $(function(){
+	//$('.using-netbank form#creditCard:visible').data('ea') !== 'true'
+        $('.creditCard_submit_btn').live('click',function(){
+            var formObj = $(this).parents("form#creditCard");
+
+            var ret = true;
+            var inputs = $('.validation_notEmpty:input:visible',$(formObj));
+            if (inputs.length > 0) {
+                inputs.each(function(){
+                    $(this).parents("div.credit-card-form").find("span.error").addClass("hidden_class");
+                    if ($(this).val() == ""){
+                        $(this).addClass('validation_error');
+                        $(this).parent("div").addClass('error-txt');
+                        ret = false;
+                    }else{
+						$(this).removeClass('validation_error');
+                                                $(this).parent("div").removeClass('error-txt');
+					}
+                });
+            }
+			var monthObj = null;
+			var yearObj = null;
+			$("#creditCard\\[expiryMonth\\]").each(function(){
+				if($(this).is(":visible"))
+					monthObj = $(this);
+			});
+			$("#creditCard\\[expiryYear\\]").each(function(){
+				if($(this).is(":visible"))
+					yearObj = $(this);
+			});
+
+			var expMonth = $(monthObj).val();
+			var expYear = $(yearObj).val();
+			var currDate = new Date();
+
+			if(expMonth == '' && expYear == ''){
+				ret = false;
+				$(monthObj).addClass('validation_error').addClass('skip');
+				$(yearObj).addClass('validation_error').addClass('skip');
+				$(yearObj).parents("div.credit-card-form").find("span.error").not('.invalid_date').removeClass("hidden_class").show();
+			}else if(expMonth == ''){
+				ret = false;
+				$(monthObj).addClass('validation_error').addClass('skip');
+				$(yearObj).parents("div.credit-card-form").find("span.error.invalid_date").removeClass("hidden_class").show();
+			}else if(expYear == ''){
+				ret = false;
+				$(yearObj).addClass('validation_error').addClass('skip');
+				$(yearObj).parents("div.credit-card-form").find("span.error.invalid_date").removeClass("hidden_class").show();
+			}
+
+			if(ret==true){
+                $('#creditCard\\[send\\]').prop("disabled","disabled");
+                $(".top-error-div").addClass("hidden_class").hide();
+                
+                _gaq.push(['_trackEvent','payment tried','payment tried','',0,true]);
+                try { triggerPaymentEvent(); } catch(e) { console.error("WebTracking", e); }
+                
+                $(formObj).submit();
+			}
+			if(ret == false){
+				//$(".top-error-div").removeClass("hidden_class").show();
+				$("input.validation_error").not('.skip').each(function(){
+					$(this).parents("div.credit-card-form").find("span.error").eq(0).removeClass("hidden_class").show();
+				});
+				$("input.skip").each(function(){
+					$(this).removeClass("skip");
+				});
+			}
+
+            return false;
+
+            //return false;
+
+        })/*.data('eventeattached','true')*/;
+        $('.validation_error').live('keyup',function(){
+            $(this).removeClass('validation_error');
+            $(this).parent("div").removeClass('error-txt');
+			$(this).parents(".payment-card.credit-card-form").find("span.error").addClass("hidden_class");
+        });
+
+		$("#creditCard\\[number\\],#creditCard\\[cvv\\]").live('keydown',function (e) {
+			// Allow: backspace, delete, tab, escape, enter and .
+			if ($.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+				 // Allow: Ctrl+A
+				(e.keyCode == 65 && e.ctrlKey === true) ||
+				//Allow: Ctrl+V
+				(e.keyCode == 86 && e.ctrlKey === true) ||
+				 // Allow: home, end, left, right
+				(e.keyCode >= 35 && e.keyCode <= 39)) {
+					 return;
+			}
+			// Ensure that it is a number and stop the keypress
+			if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+				e.preventDefault();
+			}
+		});
+		$("div.total_price_unite h2 span").html($("h1.price span").html());
+
+                $//("div.total_price_unite h2 span").html(priceCurrency+''+netPrice);
+
+		$(".placeholder_span:visible").live('click',function(e){
+			$(this).hide();
+			$(this).parent(".placeholder_wrapper").find("input").focus();
+		});
+
+		$("#creditCard\\[expiryYear\\],#creditCard\\[expiryMonth\\]").live('focus',function(e){
+			$(this).parent(".placeholder_wrapper").find(".placeholder_span").hide();
+		}).live('focusout',function(e){
+			if($.trim($(this).val()) == ''){
+				$(this).parent(".placeholder_wrapper").find(".placeholder_span").show();
+			}
+		});
+
+    });
+
+</script>
+<div class="payment-gateway" style="clear:both;">
+    <ul class="form">
+        <li>
+            <a href="javascript:void(0);">
+				<span class="credit-card-icon"></span>
+                <h2 class="CrditCard" style="">
+                    Credit Card
+                </h2>
+            </a>
+        </li>
+    </ul>
+</div>
+<form autocomplete="on" method="post" action="https://www.simplilearn.com/secure/payment/gateway/credit-card?authtoken=8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b" id="creditCard" class="payment-getway-form  contact-form pay-bank qqq">
+    <div class="pay-bank hidden_class">
+        <div class="pay_by">
+			<p><span>Enter your Credit Card details</span></p>
+			<p>Don't worry, simplilearn will never save or share your card information</p>
+
+		</div>
+    </div>
+
+
+	<input type="hidden" id="creidtCard[authtoken]" name="creditCard[authtoken]" value="8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b">
+	<div class="clear"></div>
+	<div class="creditCard[number] payment-card credit-card-form  input-text" style="clear:both;">
+        <div class="card-details card-number card_number">
+            <input id="creditCard[number]" class="us-credit-card validation_notEmpty coupon_input" value="" name="creditCard[number]" type="text" autocomplete="on">
+			<div class="floating-label">Credit Card Number</div>
+				<div class="floating-label_border"></div>
+			     <label for="creditCard[number]">
+                                
+				<span class="mastero" data-bank_name="MasterCard"></span>
+				<span class="visa" data-bank_name="Visa"></span>
+			</label>
+        </div>
+		<!--span class="error hidden_class">Please enter the Credit card number</span-->
+    </div>
+
+	<div class="creditCard[expiryMonth] payment-card credit-card-form  input-text card_validity" >
+        <div class="card-details date">
+			<span class="expry_date"> Expiry Date </span>
+            <div class="month placeholder_wrapper">
+				<!--div class="placeholder_span"><span > MM </span></div>
+				<span class="valid hidden_class">Valid Upto</span>
+				<input type="text" maxLength="2" name="creditCard[expiryMonth]" id="creditCard[expiryMonth]" class="us-credit-card validation_notEmpty" /-->
+                                <select name="creditCard[expiryMonth]" id="creditCard[expiryMonth]" class="us-credit-card validation_notEmpty">
+                                    <option value=''>MM</option>
+                                    <option value='01'>01</option>
+                                    <option value='02'>02</option>
+                                    <option value='03'>03</option>
+                                    <option value='04'>04</option>
+                                    <option value='05'>05</option>
+                                    <option value='06'>06</option>
+                                    <option value='07'>07</option>
+                                    <option value='08'>08</option>
+                                    <option value='09'>09</option>
+                                    <option value='10'>10</option>
+                                    <option value='11'>11</option>
+                                    <option value='12'>12</option>
+                                </select>
+			</div>
+            <span class="cross-line ">/</span>
+            <div class="years placeholder_wrapper">
+				<!--div class="placeholder_span"><span > YYYY </span></div>
+				<input type="text" maxLength="4" name="creditCard[expiryYear]" id="creditCard[expiryYear]" class="us-credit-card validation_notEmpty" /-->
+                                <select  name="creditCard[expiryYear]" id="creditCard[expiryYear]" class="us-credit-card validation_notEmpty">
+                                    <option value=''>YYYY</option>
+                                    <option value='2018'>2018</option>
+                                    <option value='2019'>2019</option>
+                                    <option value='2020'>2020</option>
+                                    <option value='2021'>2021</option>
+                                    <option value='2022'>2022</option>
+                                    <option value='2023'>2023</option>
+                                    <option value='2024'>2024</option>
+                                    <option value='2025'>2025</option>
+                                    <option value='2026'>2026</option>
+                                    <option value='2027'>2027</option>
+                                    <option value='2028'>2028</option>
+                                    <option value='2029'>2029</option>
+                                    <option value='2030'>2030</option>
+                                    <option value='2031'>2031</option>
+                                    <option value='2032'>2032</option>
+                                </select>
+			</div>
+				<div class="creditCard[cvv] payment-card credit-card-form  input-password cvv_input" >
+        <div class="card-details">
+            <input id="creditCard[cvv]" maxlength="4" size="4" class="us-credit-card validation_notEmpty" value="" name="creditCard[cvv]" onclick="" type="password">
+			<div class="floating-label cvv_enter">CVV
+					<span class="help-tooltips">
+					<span>These are the last <strong class='cvv_span cvv-count'>3</strong> digits behind your card
+					<strong class="tooltip-bg"></strong></span>
+					</span>
+			</div>
+			<div class="floating-label_border"></div>
+            <span class="cvv-num tooltip" rel="cvv-digit-shower"></span>
+            <div class="cvv-digit-shower">
+                <span>Look at the signature
+                    box on the back of your
+                    card. The last <strong class='cvv_span cvv-count'>3</strong>-digits
+                    printed there is your
+                    CVV / Card security code.
+                </span>
+            </div>
+        </div>
+		<!--span class="error hidden_class">Please enter CVV number</span-->
+    </div>
+        </div>
+		<!--span class="error hidden_class">Please enter the expiry date</span>
+		<span class="error invalid_date hidden_class">Please enter valid expiry date</span-->
+    </div>
+
+
+        <div class="creditCard[type] card-details hidden_class">
+        <select id="creditCard[type]" class="us-credit-card" name="creditCard[type]">
+                <option class="visa-cc-type" value="Visa" selected="selected">Visa</option>
+                <option class="master-cc-type" value="MasterCard">Master Card</option>
+                <option class="jcb-cc-type" value="JCB">JCB</option>
+                <option class="amex-cc-type" value="American Express">American Express</option>
+                <option class="dinners-cc-type" value="Diners Club Card">Diners Club Card</option>
+                <option class="discover-cc-type" value="Discover">Discover</option>
+            </select>
+            </div>
+	<div class="creditCard[bankName] payment-card credit-card-form  input-text pay-bank hidden_class" style="clear:both;display:block">
+        <div class="card-details card-number name-card">
+            <label for="creditCard[bankName]"> Name of issuing bank </label>
+            <input id="creditCard[bankName]" class="us-credit-card validation_notEmpty" value="" name="creditCard[bankName]" onclick="" type="text" style="width:81.5% !important;">
+        </div>
+		<!--span class="error hidden_class">Please enter name of issuing bank</span-->
+    </div>
+        <div class="creditCard[firstname] payment-card credit-card-form  input-text" style="clear:both;">
+            <div class="card-details card-number card_name name_on_card">    
+                <input id="creditCard[firstname]" class="us-credit-card validation_notEmpty" value="" name="creditCard[firstname]" onclick="" type="text">
+                <div class="floating-label">Name on Card </div>
+                <div class="floating-label_border"></div>
+            </div>
+            <!--span class="error hidden_class">Please enter the name as it appears on the card</span-->
+        </div>
+	<div class="clear total_price_unite">
+		<h2>
+			<span></span>
+		</h2>
+	</div>
+	<div class="creditCard[send] payment-card credit-card-form  input-submit" style="clear:both;">
+        <div class="card-details">
+            <label for="creditCard[send]">  </label>
+            <span>
+                <span class="view-all" >
+                    <input type="submit" class="hidden_class"/>
+                    <input id="creditCard[send]" class="us-credit-card view-all creditCard_submit_btn btn btn-warning" value="Confirm Payment"  name="creditCard[send]" type="button">
+                </span>
+            </span>
+        </div>
+    </div>
+	<div class="secure_msg ">Your purchase is safe and secure. Our check-out is PCI-DSS compliant as indicated by the secure lock in your address bar. Over 500,000 professionals like you have purchased courses from Simplilearn.</div>
+
+    <div class="tms-cnd hide-for-b2b">
+			<p>By placing the order, you have read and agree to Simplilearn.com's
+            <a href="http://www.simplilearn.com/terms-and-conditions#/terms-of-use" target="_blank">Terms of Use</a>,
+			<a href="http://www.simplilearn.com/terms-and-conditions#/refund-policy"  target="_blank">Refund Policy</a>,
+			<a href="http://www.simplilearn.com/terms-and-conditions#/rescheduling-policy" target="_blank">  	Rescheduling Policy</a>, and
+			<a href="http://www.simplilearn.com/terms-and-conditions#/privacy-policy" target="_blank">Privacy Policy</a>.
+        </p>
+    </div>
+
+</form>
+            </div>
+        </li>
+            <li id="debit_card" class="payment-group" ng-click='setPayment("Debit Card")'>
+            <h2 class="Debit Card" style="display:none">
+                Debit Card            </h2>
+            <div class="form">
+                <script type="text/javascript">
+var _gaq = _gaq || [];
+    $(function(){
+        $('.debitcard_submit_btn').live('click',function(){
+            var ret = true;
+            var formObj = $(this).parents("form.debitCardForm");
+
+            var inputs = $('.validation_notEmpty:input:visible',$(formObj));
+            if (inputs.length > 0) {
+                inputs.each(function(){
+                    if ($(this).val() == ""){
+                        $(this).addClass('validation_error');
+                        $(this).parent("div").addClass('error-txt');
+						if($(this).attr("name") == 'creditCard[addressLine1]'){
+							$(this).attr('style', 'border-bottom:1px solid red !important');
+						}
+                        ret = false;
+                    }else{
+						$(this).removeClass('validation_error');
+                                                $(this).parent("div").removeClass('error-txt');
+					}
+                });
+            }
+
+			var monthObj = null;
+			var yearObj = null;
+			$(formObj).find("#creditCard\\[expiryMonth\\]").each(function(){
+				if($(this).is(":visible"))
+					monthObj = $(this);
+			});
+			$(formObj).find("#creditCard\\[expiryYear\\]").each(function(){
+				if($(this).is(":visible"))
+					yearObj = $(this);
+			});
+			var expMonth = $(monthObj).val();
+			var expYear = $(yearObj).val();
+			var currDate = new Date();
+
+			if(expMonth == '' && expYear == ''){
+				ret = false;
+				$(monthObj).addClass('validation_error').addClass('skip');
+				$(yearObj).addClass('validation_error').addClass('skip');
+				$(yearObj).parents("div.credit-card-form").find("span.error").not('.invalid_date').removeClass("hidden_class").show();
+			}else if(expMonth == ''){
+				ret = false;
+				$(monthObj).addClass('validation_error').addClass('skip');
+				$(yearObj).parents("div.credit-card-form").find("span.error.invalid_date").removeClass("hidden_class").show();
+			}else if(expYear == ''){
+				ret = false;
+				$(yearObj).addClass('validation_error').addClass('skip');
+				$(yearObj).parents("div.credit-card-form").find("span.error.invalid_date").removeClass("hidden_class").show();
+			}
+
+			var emailFieldObj = null;
+			$(formObj).find("#creditCard\\[addressEmail\\]").each(function(){
+				if($(this).is(":visible"))
+					emailFieldObj = $(this);
+			});
+			var emailVal = $(emailFieldObj).val();
+                        if(emailVal) {
+                            if(emailVal.indexOf("@") != -1){
+                                    if(emailVal.indexOf(".",emailVal.indexOf("@")+2) == -1){
+                                            ret = false;
+                                            $(emailFieldObj).addClass('validation_error');
+                                            $(emailFieldObj).parent("div").addClass('error-txt');
+                                    }
+                                    if(emailVal.indexOf(".") == emailVal.length-1){
+                                            ret = false;
+                                            $(emailFieldObj).addClass('validation_error');
+                                            $(emailFieldObj).parent("div").addClass('error-txt');
+
+                                    }
+                            }else{
+                                    ret = false;
+                                    $(emailFieldObj).addClass('validation_error');
+                                    $(emailFieldObj).parent("div").addClass('error-txt');
+                            }
+                        }
+
+			if(ret==true){
+				$(formObj).find('#creditCard\\[send\\]').prop("disabled","disabled");
+				$(".top-error-div").addClass("hidden_class").hide();
+				_gaq.push(['_trackEvent','payment tried','payment tried','',0,true]);
+                                try { triggerPaymentEvent(); } catch(e) { console.error("WebTracking", e); }
+				$(formObj).submit();
+			}
+
+			if(ret == false){
+				//$(".top-error-div").removeClass("hidden_class").show();
+				$("input.validation_error").not('.skip').each(function(){
+					$(this).parents("div.credit-card-form").find("span.error").eq(0).removeClass("hidden_class").show();
+				});
+				$("input.skip").each(function(){
+					$(this).removeClass("skip");
+				});
+			}
+
+            return ret;
+        });
+        $('.validation_error').live('keyup',function(){
+            $(this).removeClass('validation_error');
+            $(this).parent("div").removeClass('error-txt');
+			$(this).parents(".payment-card.credit-card-form").find("span.error").addClass("hidden_class");
+			if($(this).attr("name") == 'creditCard[addressLine1]'){
+				$(this).removeAttr('style');
+			}
+        });
+		$('select.validation_error').live('change',function(){
+            $(this).removeClass('validation_error');
+            $(this).parent("div").removeClass('error-txt');
+			$(this).parents(".payment-card.credit-card-form").find("span.error").addClass("hidden_class");
+
+        });
+
+
+		$("#creditCard\\[number\\],#creditCard\\[cvv\\]").live('keydown',function (e) {
+			// Allow: backspace, delete, tab, escape, enter and .
+			if ($.inArray(e.keyCode, [46, 8, 9, 27, 13]) !== -1 ||
+				 // Allow: Ctrl+A
+				(e.keyCode == 65 && e.ctrlKey === true) ||
+				//Allow: Ctrl+V
+				(e.keyCode == 86 && e.ctrlKey === true) ||
+				 // Allow: home, end, left, right
+				(e.keyCode >= 35 && e.keyCode <= 39)) {
+					 return;
+			}
+			// Ensure that it is a number and stop the keypress
+			if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+				e.preventDefault();
+			}
+		});
+		$("div.total_price_unite h2 span").html($("h1.price span").html());
+
+		$(".placeholder_span:visible").live('click',function(e){
+			$(this).hide();
+			$(this).parent(".placeholder_wrapper").find("input").focus();
+		});
+
+		$("input.us-credit-card:visible").live('focus',function(e){
+			$(this).parent(".placeholder_wrapper").find(".placeholder_span").hide();
+		}).live('focusout',function(e){
+			if($.trim($(this).val()) == ''){
+				$(this).parent(".placeholder_wrapper").find(".placeholder_span").show();
+			}
+		});
+    });
+</script>
+<div class="payment-gateway" style="clear:both;">
+    <ul>
+        <li>
+            <a href="javascript:void(0);">
+				<span class="credit-card-icon"></span>
+                <h2 class="CrditCard" style="">
+                    Debit Card
+                </h2>
+            </a>
+        </li>
+    </ul>
+</div>
+<form autocomplete="on" style="display: none;" method="post" action="https://www.simplilearn.com/secure/payment/gateway/credit-card?authtoken=8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b" id="creditCard" class="payment-getway-form  contact-form debitCardForm">
+    <div class="pay-bank debit-pay-bank hidden_class">
+		<div class="pay_by">
+			<p><span>Enter your Debit Card details</span></p>
+			<p>Don't worry, simplilearn will never save or share your card information</p>
+		</div>
+    </div>
+	<div class="clear top-error-div hidden_class debit-error-div">
+		<span class="top-error-icon"></span>
+		Please fill in the mandatory fileds marked below in red to proceed
+	</div>
+    <div class="clear" ></div>
+	<input type="hidden" id="creidtCard[authtoken]" name="creditCard[authtoken]" value="8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b">
+	<input type="hidden" id="creidtCard[isDebit]" name="creditCard[isDebit]" value="1">
+
+   <div class="creditCard[number] payment-card credit-card-form  input-text pay-bank" style="clear:both;">
+        <div class="card-details card-number card_number debit-card-number">
+            <input id="creditCard[number]" class="us-credit-card validation_notEmpty" value="" name="creditCard[number]" type="text" autocomplete="on">
+			<div class="floating-label">Debit Card Number</div>
+			<div class="floating-label_border"></div>
+			    <label for="creditCard[number]">
+				<span class="mastero" data-bank_name="MasterCard"></span>
+				<span class="visa" data-bank_name="Visa"></span>
+				</label>
+			<span class="lock-icon hidden_class"></span>
+        </div>
+		<!--span class="error hidden_class">Please enter the Debit card number</span-->
+    </div>
+
+	<div class="creditCard[expiryMonth] payment-card credit-card-form  input-text card_validity debit-card-number" style="clear:both;">
+        <div class="card-details date">
+			<span class="expry_date"> Expiry Date </span>
+			<div class="month placeholder_wrapper">
+				<!--div class="placeholder_span"><span > MM </span></div>
+				<span class="valid hidden_class">Valid Upto</span>
+				<input type="text" maxLength="2" name="creditCard[expiryMonth]" id="creditCard[expiryMonth]" class="us-credit-card validation_notEmpty" /-->
+                                <select name="creditCard[expiryMonth]" id="creditCard[expiryMonth]" class="us-credit-card validation_notEmpty">
+                                    <option value=''>MM</option>
+                                    <option value='01'>01</option>
+                                    <option value='02'>02</option>
+                                    <option value='03'>03</option>
+                                    <option value='04'>04</option>
+                                    <option value='05'>05</option>
+                                    <option value='06'>06</option>
+                                    <option value='07'>07</option>
+                                    <option value='08'>08</option>
+                                    <option value='09'>09</option>
+                                    <option value='10'>10</option>
+                                    <option value='11'>11</option>
+                                    <option value='12'>12</option>
+                                </select>
+			</div>
+            <span class="cross-line">/</span>
+            <div class="years placeholder_wrapper">
+                    <!--div class="placeholder_span"><span > YYYY </span></div>
+                    <input type="text" maxLength="4" name="creditCard[expiryYear]" id="creditCard[expiryYear]" class="us-credit-card validation_notEmpty" /-->
+                    <select  name="creditCard[expiryYear]" id="creditCard[expiryYear]" class="us-credit-card validation_notEmpty">
+                                    <option value=''>YYYY</option>
+                                    <option value='2018'>2018</option>
+                                    <option value='2019'>2019</option>
+                                    <option value='2020'>2020</option>
+                                    <option value='2021'>2021</option>
+                                    <option value='2022'>2022</option>
+                                    <option value='2023'>2023</option>
+                                    <option value='2024'>2024</option>
+                                    <option value='2025'>2025</option>
+                                    <option value='2026'>2026</option>
+                                    <option value='2027'>2027</option>
+                                    <option value='2028'>2028</option>
+                                    <option value='2029'>2029</option>
+                                    <option value='2030'>2030</option>
+                                    <option value='2031'>2031</option>
+                                    <option value='2032'>2032</option>
+                                    <option value='2031'>2033</option>
+                                    <option value='2032'>2034</option>
+                                    <option value='2032'>2035</option>
+                                </select>
+            </div>
+				<div class="creditCard[cvv] payment-card credit-card-form  input-password cvv_input" >
+        <div class="card-details">
+		 <input id="creditCard[cvv]" maxlength="4" size="4" class="us-credit-card validation_notEmpty" value="" name="creditCard[cvv]" onclick="" type="password">
+            <div class="floating-label" for="creditCard[cvv]"> CVV
+				<span class="help-tooltips">
+					<span>These are the last <strong class='cvv_span cvv-count'>3</strong> digits behind your card
+					<strong class="tooltip-bg"></strong></span>
+				</span>
+			</div>
+			<div class="floating-label_border"></div>
+            <span class="cvv-num tooltip" rel="cvv-digit-shower"></span>
+            <div class="cvv-digit-shower">
+                <span>Look at the signature box on the back of your card. The last 3-digits printed there is your CVV / Card security code.
+                </span>
+            </div>
+        </div>
+		<!--span class="error hidden_class">Please enter CVV number</span-->
+    </div>
+        </div>
+		<!--span class="error hidden_class">Please enter the expiry date</span>
+		<span class="error invalid_date hidden_class">Please enter valid expiry date</span-->
+    </div>
+
+	<div class="creditCard[bankName] payment-card credit-card-form  input-text pay-bank hidden_class" style="clear:both;display:block">
+        <div class="card-details card-number card_name placeholder_wrapper">
+            <label for="creditCard[bankName]"> Name of issuing bank </label>
+            <input id="creditCard[bankName]" class="us-credit-card validation_notEmpty" value="" name="creditCard[bankName]" onclick="" type="text">
+        </div>
+		<!--span class="error hidden_class">Please enter name of issuing bank</span-->
+    </div>
+	<div class="customer_enter_fields clear">
+		<div class="creditCard[firstname] payment-card credit-card-form  input-text pay-bank name_full" >
+			<div class="card-details card-number card_name name_on_card debit-card-on-name placeholder_wrapper">
+				<input id="creditCard[firstname]" class="us-credit-card validation_notEmpty" value="" name="creditCard[firstname]" onclick="" type="text">
+				<div class="floating-label" for="creditCard[firstname]">Name on Card</div>
+				<div class="floating-label_border"></div>
+			</div>
+			<!--span class="error hidden_class">Please enter the name as it appears on the card</span-->
+		</div>
+	</div>
+	<div class="creditCard[type] payment-card credit-card-form  input-text pay-bank hidden_class" style="clear:both;">
+        <div class="card-details card-number card_name name_on_card debit-card-on-name">
+            <label for="creditCard[type]">Card Type</label>
+            <select id="creditCard[type]" class="us-credit-card" name="creditCard[type]">
+                <option class="visa-cc-type" value="Visa" selected="selected">Visa</option>
+                <option class="master-cc-type" value="MasterCard">Master Card</option>
+                <option class="jcb-cc-type" value="JCB">JCB</option>
+                <!--option class="amex-cc-type" value="American Express">American Express</option-->
+                <option class="dinners-cc-type" value="Diners Club Card">Diners Club Card</option>
+                <option class="discover-cc-type" value="Discover">Discover</option>
+            </select>
+        </div>
+		<!--span class="error hidden_class">Please select card type</span-->
+    </div>
+	<!-- Old fields :end -->
+	<div class="clear total_price_unite">
+		<h2>
+			<span></span>
+		</h2>
+	</div>
+	<div class="creditCard[send] payment-card credit-card-form  input-submit" style="clear:both;">
+        <div class="card-details">
+            <label for="creditCard[send]">  </label>
+			<input type="submit" class="hidden_class" />
+            <span>
+                <span class="view-all">
+                    <input id="creditCard[send]" class="us-credit-card view-all debitcard_submit_btn btn btn-warning" value="Confirm Payment" name="creditCard[send]" type="button">
+                </span>
+            </span>
+        </div>
+    </div>
+    <div class="clear tms-cnd">
+        <p>By placing the order, you have read and agree to Simplilearn.com's
+            <a href="http://www.simplilearn.com/terms-and-conditions#/terms-of-use" target="_blank">Terms of Use</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/refund-policy"  target="_blank">Refund Policy</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/rescheduling-policy" target="_blank">  	Rescheduling Policy</a>, and
+					<a href="http://www.simplilearn.com/terms-and-conditions#/privacy-policy" target="_blank">Privacy Policy</a>.
+        </p>
+    </div>
+	<div class="secure_msg deb_secure ">Your purchase is safe and secure. Our check-out is PCI-DSS compliant as indicated by the secure lock in your address bar. Over 500,000 professionals like you have purchased courses from Simplilearn.</div>
+</form>
+            </div>
+        </li>
+            <li id="net_banking" class="payment-group" ng-click='setPayment("Net Banking")'>
+            <h2 class="Net Banking" style="display:none">
+                Net Banking            </h2>
+            <div class="form">
+                <script type="text/javascript">
+var _gaq = _gaq || [];
+$(function(){
+	$(".select-bank-main:visible").find("input[type='radio']").live('change',function(){
+		if($(this).is(":checked")){
+			$("select[name='netBankingCards']:visible").val($(this).data('select_value')).change();
+		}
+	});
+	$("select[name='netBankingCards']").live('change',function(){
+		if(typeof $(this).val()!='undefined' && $(this).val()!=''){
+			var selectedBankName = $(this).val();
+			$(".select-bank-main:visible").find("input[type='radio']").each(function(){
+				$(this).removeAttr("checked");
+				if($(this).data('select_value') == selectedBankName){
+					$(this).attr("checked","checked");
+				}
+			});
+		}else{
+			$(".select-bank-main:visible").find("input[type='radio']").each(function(){
+				$(this).removeAttr("checked");
+			});
+		}
+	});
+	$("div.total_price_unite h2 span").html($("h1.price span").html());
+
+	$(".payment-getway-form.netbanking_form").find("select[name='netBankingCards']").live('change',function(){
+		var formObj = $(this).parents("form.payment-getway-form.netbanking_form");
+		if($(this).val() != ''){
+			$(formObj).find(".netbanking_error_span").hide();
+			$(this).parent(".styled-select").removeClass("validation_error");
+		}
+	});
+
+	$(".payment-getway-form.netbanking_form").find("input#send").live('click',function(e){
+		var formObj = $(this).parents("form.payment-getway-form.netbanking_form");
+		$(formObj).find(".netbanking_error_span").hide();
+		$(formObj).find("select[name='netBankingCards']").parent(".styled-select").removeClass("validation_error");
+
+		if($(formObj).find("select[name='netBankingCards']").val() == ''){
+			$(formObj).find(".netbanking_error_span").removeClass("hidden_class").show();
+			$(formObj).find("select[name='netBankingCards']").parent(".styled-select").addClass("validation_error");
+			return false;
+		}else{
+			//_gaq.push(['_trackEvent','payment tried','payment tried','',0,true]);
+                        try { triggerPaymentEvent(); } catch(e) { console.error("WebTracking", e); }
+            $(formObj).submit();
+		}
+
+	});
+});
+</script>
+<div class="payment-gateway" style="clear:both;">
+    <ul>
+        <!-- paypal content start -->
+        <li>
+			<a href="javascript:void(0);">
+				<span class="netbank-icon"></span>
+				<h2>Net Banking </h2>
+			</a>
+		</li>
+        <!-- paypal content end -->
+    </ul>
+</div>
+
+<!-- ntbanking content start -->
+<form autocomplete="off" style="display: none;" method="post" action="https://www.simplilearn.com/secure/payment/gateway/net-banking?authtoken=8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b" class="payment-getway-form contact-form netbanking_form">
+    <input type="hidden" name="billing_cust_email" value="" />
+    <div class="pay-bank">
+	<div class="pay_by">
+        <p><span>Select Bank </span></p>
+		</div>
+    </div>
+	<div class="select-bank-main">
+		<div class="select-bank">
+			<label><input type="radio" name="radio" data-select_value="UTIB"><span class="axis-bank"></span></label>
+		</div>
+		 <div class="select-bank">
+			<label><input type="radio" name="radio" data-select_value="INDB"><span class="indb-bank"></span></label>
+		</div>
+		 <div class="select-bank no-right-margin">
+			<label><input type="radio" name="radio" data-select_value="HDFC"><span class="hdfc-bank"></span></label>
+		</div>
+		 <div class="select-bank">
+			<label><input type="radio" name="radio" data-select_value="ICIC"><span class="icici-bank"></span></label>
+		</div>
+		<div class="select-bank">
+			<label><input type="radio" name="radio" data-select_value="KKBK"><span class="kotak-bank"></span></label>
+		</div>
+		 <div class="select-bank no-right-margin">
+			<label><input type="radio" name="radio" data-select_value="SBIN"><span class="sbi-bank"></span></label>
+		</div>
+	</div>
+	 <div class="clear"></div>
+    <div class="payment-card">
+        <table class="" border="0" cellpadding="0" cellspacing="0" width="100%">
+            <tr>
+                <td style="padding:0px;"><span class="select-your-bank hidden_class"> Select your bank </span></td>
+            </tr>
+			<tr>
+				<td class="select-other-banks" style="padding:6px 0px 0px 0px;">
+					<div class="styled-select">
+						<span class="arrow-down"></span>
+						<select size="1" name="netBankingCards" ng-model="bankSel">
+	<option value ="" >Select any other bank</option>
+	<option ng-repeat="bank in netBankingPref" value ="{{bank.code}}" >{{bank.name}}</option>
+</select>
+					</div>
+				</td>
+			</tr>
+        </table>
+    </div>
+	<span class="netbanking_error_span hidden_class error">Please select a bank</span>
+	<div class="clear total_price_unite netbanking-price">
+		<h2>
+			<span></span>
+		</h2>
+	</div>
+    <div class="find" >
+        <span class="r2-curve"></span>
+        <span class="view-all" >
+            <input id="send" class="us-credit-card view-all btn btn-warning" value="Pay Securely" name="submit" type="submit">
+        </span>
+        <span class="l2-curve"></span>
+    </div>
+
+    <div class="tms-cnd">
+        <p>By placing the order, you have read and agree to Simplilearn.com's
+            <a href="http://www.simplilearn.com/terms-and-conditions#/terms-of-use" target="_blank">Terms of Use</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/refund-policy"  target="_blank">Refund Policy</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/rescheduling-policy" target="_blank">  	Rescheduling Policy</a>, and
+					<a href="http://www.simplilearn.com/terms-and-conditions#/privacy-policy" target="_blank">Privacy Policy</a>.
+		</p>
+    </div>
+</form>
+<!-- ntbanking content end -->
+
+            </div>
+        </li>
+            <li id="emi" class="payment-group" ng-click='setPayment("EMI")'>
+            <h2 class="EMI" style="display:none">
+                EMI            </h2>
+            <div class="form">
+                <script type="text/javascript">
+
+var _gaq = _gaq || [];
+$(function(){
+	$(".ccavenue_in_submit").live("click",function(e){
+            e.preventDefault();
+            var linkObj = $(this);
+            _gaq.push(['_trackEvent', 'payment tried', 'payment tried', '', 0, true]);
+            try { triggerPaymentEvent(); } catch(e) { console.error("WebTracking", e); }
+            window.location = $(linkObj).attr('href');
+	});
+});
+</script>
+<div class="payment-gateway" style="clear:both;">
+	   <ul>
+	   <!-- paypal content start -->
+	    <li><a href="javascript:void(0);" class="cc-tooltip-icon">
+
+			<span class="emi-card-icon"></span>
+                        <h2 class="CrditCard" style=""> EMI </h2>
+			</a>
+		</li>
+	   <!-- paypal content end -->
+	   </ul>
+
+</div>
+
+<!-- paaypal content start-->
+		<div class="payment-getway-form" >
+		    <div class="pay-bank">
+				 <div class="pay_by">
+        <p><span>Pay using EMI</span></p>
+		</div>
+				<div class="pay_by">
+					<span class="mastero"></span>
+					<span class="visa"></span>
+					<span class="express"></span>
+				 </div>
+			</div>
+			<div class="clear">&nbsp;</div>
+                        <div>The purchase value of <strong>Rs. 15338.82</strong> will be <strong>converted</strong> into <strong>monthly installments</strong> based on your EMI plan selection and installment amount would be <strong>charged on your Credit Card</strong></div>
+			<div class="check-space">&nbsp;</div>
+			<div class="payment-card">
+			  <p>After clicking on the "Pay Securely", you will be redirected to a secure CCAvenue payment Gateway where you can choose your EMI plan and make the payment.</p>
+			  <div class="clear">&nbsp;</div>
+				<div class="find" style="float:left;">
+				 <span class="r2-curve"></span>
+                    <a href="https://www.simplilearn.com/secure/payment/gateway/ccavenuein?authtoken=8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b&paymentOption=emi" class="view-all ccavenue_in_submit btn btn-warning" >Pay Securely</a>
+				  <span class="l2-curve"></span>
+			  </div>
+			  <div class="clear">&nbsp;</div>
+				<div style="width: 225px;">
+			     <span style="float:left;"><em>Payments processed  by</em></span>
+			    <span class="ccavenue" style="width:85px;"></span>
+			   </div>
+
+			</div>
+
+			   <div class="clear check-space">&nbsp;</div>
+			  <div class="tms-cnd">
+				<p>By placing the order, you have read and agree to Simplilearn.com's
+					<a href="http://www.simplilearn.com/terms-and-conditions#/terms-of-use" target="_blank">Terms of Use</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/refund-policy"  target="_blank">Refund Policy</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/rescheduling-policy" target="_blank">  	Rescheduling Policy</a>, and
+					<a href="http://www.simplilearn.com/terms-and-conditions#/privacy-policy" target="_blank">Privacy Policy</a>.
+				</p>
+			  </div>
+		  </div>
+	<!-- papal content end-->
+
+
+            </div>
+        </li>
+            <li id="ccavenue" class="payment-group" ng-click='setPayment("CCAvenue")'>
+            <h2 class="CCAvenue" style="display:none">
+                CCAvenue            </h2>
+            <div class="form">
+                <script type="text/javascript">
+var _gaq = _gaq || [];
+$(function(){
+	$(".ccavenue_in_submit").live("click",function(e){
+            e.preventDefault();
+            var linkObj = $(this);
+            _gaq.push(['_trackEvent', 'payment tried', 'payment tried', '', 0, true]);
+            try { triggerPaymentEvent(); } catch(e) { console.error("WebTracking", e); }
+            window.location = $(linkObj).attr('href');
+	});
+});
+</script>
+<div class="payment-gateway" style="clear:both;">
+	   <ul>
+	   <!-- paypal content start -->
+	    <li><a href="javascript:void(0);" class="cc-tooltip-icon">
+
+			<span class="ccavenue_icon"></span>
+                        <span class="cc-tooltip amex_not_available hidden_class">Please use CCAvenue option for American Express
+						<span class="icon-ccavenu"></span></span>
+			<!--h2>Credit Card</h2-->
+			</a>
+		</li>
+	   <!-- paypal content end -->
+	   </ul>
+
+</div>
+
+<!-- paaypal content start-->
+		<div class="payment-getway-form" >
+		    <div class="pay-bank">
+				 <div class="pay_by">
+        <p><span>Pay using CCAvenue</span></p>
+		</div>
+				<div class="pay_by">
+					<span class="mastero"></span>
+					<span class="visa"></span>
+					<span class="express"></span>
+				 </div>
+			</div>
+			<div class="clear">&nbsp;</div>
+			<div><strong>You will be charged <span style="font-size:16px;" class="ccavenue_price">Rs. 15338.82</span> on your Credit card through CCAvenue Payment Gateway.</strong></div>
+			<div class="check-space">&nbsp;</div>
+			<div class="payment-card">
+			  <p>After clicking on the "Pay Securely" button, you will be redirected to a secure CCAvenue payment gateway for payment. After completing the payment process, you will be redirected back to Simplilearn.com to view details on your order.</p>
+			  <div class="clear">&nbsp;</div>
+				<div class="find" style="float:left;">
+				 <span class="r2-curve"></span>
+                    <a href="https://www.simplilearn.com/secure/payment/gateway/ccavenuein?authtoken=8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b" class="view-all ccavenue_in_submit btn btn-warning" >Pay Securely</a>
+				  <span class="l2-curve"></span>
+			  </div>
+			  <div class="clear">&nbsp;</div>
+				<div style="width: 225px;">
+			     <span style="float:left;"><em>Payments processed  by</em></span>
+			    <span class="ccavenue" style="width:85px;"></span>
+			   </div>
+
+			</div>
+
+			   <div class="clear check-space">&nbsp;</div>
+			  <div class="tms-cnd">
+				<p>By placing the order, you have read and agree to Simplilearn.com's
+					<a href="http://www.simplilearn.com/terms-and-conditions#/terms-of-use" target="_blank">Terms of Use</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/refund-policy"  target="_blank">Refund Policy</a>,
+					<a href="http://www.simplilearn.com/terms-and-conditions#/rescheduling-policy" target="_blank">  	Rescheduling Policy</a>, and
+					<a href="http://www.simplilearn.com/terms-and-conditions#/privacy-policy" target="_blank">Privacy Policy</a>.
+				</p>
+			  </div>
+		  </div>
+	<!-- papal content end-->
+
+
+            </div>
+        </li>
+            <li id="razorpay" class="payment-group" ng-click='setPayment(null)'>
+            <h2 class="" style="display:none">
+                            </h2>
+            <div class="form">
+                            </div>
+        </li>
+            <li id="susbscription_nonfreetrial" class="payment-group" ng-click='setPayment(null)'>
+            <h2 class="" style="display:none">
+                            </h2>
+            <div class="form">
+                            </div>
+        </li>
+            <li id="susbscription_freetrial" class="payment-group" ng-click='setPayment(null)'>
+            <h2 class="" style="display:none">
+                            </h2>
+            <div class="form">
+                            </div>
+        </li>
+            <li id="subscription" class="payment-group" ng-click='setPayment(null)'>
+            <h2 class="" style="display:none">
+                            </h2>
+            <div class="form">
+                            </div>
+        </li>
+            <li id="zest_money" class="payment-group" ng-click='setPayment(null)'>
+            <h2 class="" style="display:none">
+                            </h2>
+            <div class="form">
+                            </div>
+        </li>
+    	<li class="logos" style="display:none;">
+		<!-- online payment authorisation logo start -->
+		<div class="processor-logos" style="float:left; width:150px;">
+			<div style="text-align:center;">
+				<span>100% Secure Payment</span>
+				<span> <a href="https://sealserver.trustwave.com/cert.php?customerId=7a0108cc7c994b7a84e19bc5632314d8&size=105x54&style=invert" target="_blank">
+				<img  src="https://www.simplilearn.com/static_ssvc/images/trustwave.png" alt="trustwave image"/>
+				</a></span>
+			</div>
+			<div style="border-top:#ccc solid 1px;margin-top:10px;">&nbsp;</div>
+			<div style="padding-left:30px;"><span> Powered By </span></div>
+			<span class="authorize" style="text-align:center;">
+				<!-- (c) 2005, 2013. Authorize.Net is a registered trademark of CyberSource Corporation -->
+					<a href="http://verify.authorize.net/anetseal/?pid=ad635fbb-1aba-4c70-96c2-7cfb1601ccd1&rurl=http%3A//localhost/apachedev/pigen/web_services/ssvc/public/checkout/details%3Fauthtoken%3Dcart_us_classroom" target="_blank">
+						<img src="https://www.simplilearn.com/static_ssvc/images/authorize_net.jpg" alt="authorize dot image" />
+					</a>
+				<!-- (c) 2005, 2013. Authorize.Net is a registered trademark of CyberSource Corporation -->
+			</span>
+			<span class="PayPal-pro"></span>
+			<span class="wallet"></span>
+			<span class="c2checkout-logo"></span>
+			<span class="ccavenue-logo"></span>
+			<span class="first_data"></span>
+		</div>
+		<!-- online payment authorisation logo end -->
+	</li>
+</ul>
+
+<div class="paymentDiv using-netbank hidden_cls">
+    <div class='loading_payment'></div>
+</div>
+
+</div>
+</div>
+</div>
+            
+    
+</div>
+    
+<!-- sr.no, course description, basic price, discounted price, quantity, total start  -->
+<script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/external/CountryData.1503293258.js"></script>
+<span ng-init="init_CountryData(6,'IN');"></span>
+
+<div class="popup_country_wrapper cart_overlay" ng-style="{'display':(isRequestPending === 1) ? 'block' : 'none'}" style="display: none;">
+    <div class="loader_icon"></div>
+</div>
+<!-- If European Country Include cookie info -->
+    <span ng-controller="WebengageController" ng-init="initData()"></span>
+</div>
+<!-- discount total, and gramd total end -->
+<!-- sr.no, course description, basic price, discounted price, quantity, total end  -->
+<script>
+            var printGaInConsole = false;
+    
+    function gaEventsTracker() {
+
+        this.eventsRedmine1094 = {
+             'cartpagecouponinitiated': {'category': "Payment", 'action': "Coupon Initiated", 'labelRequired': true, 'noninteractiveness': false},
+            'cartpagecoupontry': {'category': "Payment", 'action': "Coupon Applied", 'labelRequired': true, 'noninteractiveness': false},
+            'coursesummaryproceed': {'category': "Payment", 'action': "Course Summary Proceed", 'labelRequired': true, 'noninteractiveness': false},
+            'intiatelearnerdetails': {'category': "Payment", 'action': "Learner Details Initiated", 'labelRequired': true, 'noninteractiveness': false},
+            'learnerdetailsproceed': {'category': "Payment", 'action': "Learner Details Proceed", 'labelRequired': true, 'noninteractiveness': false},
+
+
+
+
+
+            'homepagejumpto':                       {'category': "Home Page", 'action': "Jump To",'labelRequired': true, 'noninteractiveness': false},
+            'homepageflyout':                       {'category': "Home Page", 'action': "Flyout",'labelRequired': true, 'noninteractiveness': false},
+            'homepagesearch':                       {'category': "Home Page", 'action': "Search",'labelRequired': true, 'noninteractiveness': false},
+            'homepagepopularcourseclick':           {'category': "Home Page", 'action': "Popular Course Click",'labelRequired': true, 'noninteractiveness': false},
+            'homepagepopularcourseverticalclick':   {'category': "Home Page", 'action': "Popular Course Vertical Click",'labelRequired': true, 'noninteractiveness': true},
+            'homepageselecttrainingtype':           {'category': "Home Page", 'action': "Select Training Type",'labelRequired': true, 'noninteractiveness': true},
+
+            'courselistpageselectcourse':           {'category': "Course List Page", 'action': "Select Course",'labelRequired': true, 'noninteractiveness': false},
+            'courselistpagequeryformsubmit':        {'category': "Course List Page", 'action': "Query Form Submit",'labelRequired': true, 'noninteractiveness': false},
+
+            'coursepagegenerictrain':               {'category': "Course Page Generic", 'action': "Select Training Type",'labelRequired': true, 'noninteractiveness': false},
+            'coursepagegenericcourseintro':         {'category': "Course Page Generic", 'action': "View Course Intro",'labelRequired': true, 'noninteractiveness': true},
+            'coursepagegenericviewothertrain':      {'category': "Course Page Generic", 'action': "View Other Training Type",'labelRequired': false, 'noninteractiveness': true},
+            'coursepagegenericcoursepreview':       {'category': "Course Page Generic", 'action': "Course Preview Try",'labelRequired': false, 'noninteractiveness': true},
+            'coursepagegenericcoursepreviewsuccess':{'category': "Course Page Generic", 'action': "Course Preview Success",'labelRequired': false, 'noninteractiveness': false},
+            'coursepagegenericcitytraining':        {'category': "Course Page Generic", 'action': "Choose City Training Page",'labelRequired': true, 'noninteractiveness': false},
+            'coursepagegenericqueryformsubmit':     {'category': "Course Page Generic", 'action': "Query Form Submit",'labelRequired': false, 'noninteractiveness': false},
+
+            'coursepageonlinetrain':                {'category': "Course Page OSL", 'action': "Choose ILT as Training Type",'labelRequired': false, 'noninteractiveness': true},
+            'coursepageonlinecourseintro':          {'category': "Course Page OSL", 'action': "View Course Intro",'labelRequired': true, 'noninteractiveness': true},
+            'coursepageonlineviewothertrain':       {'category': "Course Page OSL", 'action': "View Other Training Type",'labelRequired': false, 'noninteractiveness': true},
+            'coursepageonlinecoursepreview':        {'category': "Course Page OSL", 'action': "Course Preview Try",'labelRequired': false, 'noninteractiveness': true},
+            'coursepageonlinecoursepreviewsuccess': {'category': "Course Page OSL", 'action': "Course Preview Success",'labelRequired': false, 'noninteractiveness': false},
+            'coursepageonlinecitytraining':         {'category': "Course Page OSL", 'action': "Choose City Training Page",'labelRequired': true, 'noninteractiveness': false},
+            'coursepageonlinequeryformsubmit':      {'category': "Course Page OSL", 'action': "Query Form Submit",'labelRequired': false, 'noninteractiveness': false},
+            'coursepageonlineenroll':               {'category': "Course Page OSL", 'action': "Enroll",'labelRequired': false, 'noninteractiveness': false},
+
+            'coursepageclassroomcourseintro':       {'category': "Course Page ILT", 'action': "View Course Intro",'labelRequired': true, 'noninteractiveness': true},
+            'coursepageclassroomviewothertrain':    {'category': "Course Page ILT", 'action': "View Other Training Type",'labelRequired': false, 'noninteractiveness': true},
+            'coursepageclassroomtrain':             {'category': "Course Page ILT", 'action': "Choose OSL as Training Type",'labelRequired': false, 'noninteractiveness': true},
+            'coursepageclassroomcoursepreview':     {'category': "Course Page ILT", 'action': "Course Preview Try",'labelRequired': false, 'noninteractiveness': true},
+          'coursepageclassroomcoursepreviewsuccess':{'category': "Course Page ILT", 'action': "Course Preview Success",'labelRequired': false, 'noninteractiveness': false},
+            'coursepageclassroomenroll':            {'category': "Course Page ILT", 'action': "Enroll",'labelRequired': false, 'noninteractiveness': false},
+            'coursepageiltchangecitytry':           {'category': "Course Page ILT", 'action': "Change City Try",'labelRequired': false, 'noninteractiveness': true},
+            'coursepageiltchangecitysuccess':       {'category': "Course Page ILT", 'action': "Change City Success",'labelRequired': true, 'noninteractiveness': true},
+            'coursepageclassroomcitytraining':      {'category': "Course Page ILT", 'action': "Choose City Training Page",'labelRequired': true, 'noninteractiveness': false},
+            'coursepageclassroomqueryformsubmit':   {'category': "Course Page ILT", 'action': "Query Form Submit",'labelRequired': false, 'noninteractiveness': false},
+            'coursepageconvenienttry':              {'category': "Course Page ILT", 'action': "Convenient Schedule Try",'labelRequired': false, 'noninteractiveness': true},
+            'coursepageconvenientsubmit':           {'category': "Course Page ILT", 'action': "Convenient Schedule Submit",'labelRequired': false, 'noninteractiveness': false},
+
+            'cartpagecouponsuccess':                {'category': "Cart Page", 'action': "Coupon Success",'labelRequired': true, 'noninteractiveness': true},
+            'cartpagecouponfail':                   {'category': "Cart Page", 'action': "Coupon Fail",'labelRequired': true, 'noninteractiveness': true},
+            'cartpageproceedtopay':                 {'category': "Cart Page", 'action': "Proceed to Pay Click",'labelRequired': true, 'noninteractiveness': false},
+
+            'crosseventsrequestcallbacktry':        {'category': "Request a Call Back", 'action': "Try",'labelRequired': false, 'noninteractiveness': true},
+            'crosseventsrequestcallbacksuccess':    {'category': "Request a Call Back", 'action': "Success",'labelRequired': false, 'noninteractiveness': false},
+
+            'crosseventslivechattry':               {'category': "Live Chat", 'action': "Try",'labelRequired': false, 'noninteractiveness': false},
+
+            'crosseventsloginopen':                 {'category': "Login", 'action': "Login Click",'labelRequired': false, 'noninteractiveness': true},
+            'crosseventsloginattempt':              {'category': "Login", 'action': "Login Attempt",'labelRequired': true, 'noninteractiveness': true},
+            'crosseventsloginsuccess':              {'category': "Login", 'action': "Login Success",'labelRequired': true, 'noninteractiveness': false},
+            'crosseventsloginfailure':              {'category': "Login", 'action': "Login Failure",'labelRequired': true, 'noninteractiveness': true},
+
+            'crosseventsloginsignupclick':          {'category': "Login", 'action': "Sign Up Click",'labelRequired': false, 'noninteractiveness': true},
+            'crosseventsloginsignupattempt':        {'category': "Login", 'action': "Sign Up Attempt",'labelRequired': true, 'noninteractiveness': true},
+            'crosseventsloginsignupsuccess':        {'category': "Login", 'action': "Sign Up Success",'labelRequired': true, 'noninteractiveness': false},
+            'crosseventsloginsignupfailure':        {'category': "Login", 'action': "Sign Up Failure",'labelRequired': true, 'noninteractiveness': true},
+
+            'crosseventscountrychangetry':          {'category': "Country_Change", 'action': "Try",'labelRequired': true, 'noninteractiveness': true},
+            'crosseventscountrychangesuccess':      {'category': "Country_Change", 'action': "Set",'labelRequired': true, 'noninteractiveness': true},
+
+            'crosseventssearchattempt':             {'category': "Search", 'action': "Attempt",'labelRequired': true, 'noninteractiveness': true},
+            'crosseventssearchlist':                {'category': "Search", 'action': "List",'labelRequired': true, 'noninteractiveness': false},
+            'crosseventssearchclickresult':         {'category': "Search", 'action': "Click_Result",'labelRequired': true, 'noninteractiveness': false},
+            'crosseventssearchnoresult':            {'category': "Search", 'action': "No_Result",'labelRequired': true, 'noninteractiveness': true},
+
+            'leadcapturerequestcall':               {'category': "Lead Capture", 'action': "Lead Submit",'labelRequired': true, 'labelValue': 'Request A Call', 'noninteractiveness': false},
+            'leadcapturequeryform':                 {'category': "Lead Capture", 'action': "Lead Submit",'labelRequired': true, 'labelValue': 'Query Form', 'noninteractiveness': false},
+            'leadcapturecoursepreview':             {'category': "Lead Capture", 'action': "Lead Submit",'labelRequired': true, 'labelValue': 'Course Preview', 'noninteractiveness': false},
+            'leadcaptureworkshopnotavail':          {'category': "Lead Capture", 'action': "Lead Submit",'labelRequired': true, 'labelValue': 'Workshop Not Available', 'noninteractiveness': false},
+            'leadcaptureconvenientsched':           {'category': "Lead Capture", 'action': "Lead Submit",'labelRequired': true, 'labelValue': 'Convenient Schedule', 'noninteractiveness': false},
+            'leadcapturereferearnreferrer':         {'category': "Lead Capture", 'action': "Lead Submit",'labelRequired': true, 'noninteractiveness': false},
+            'leadcapturereferearnreferee':          {'category': "Lead Capture", 'action': "Lead Submit",'labelRequired': true, 'noninteractiveness': false},
+        }
+
+
+
+
+
+        this.overAllFunnelString = 'overall funnel';
+        this.classRoomFunnelString = 'classroom funnel';
+        this.onlineFunnelString = 'online funnel';
+        this.noWorkshopFoundFunnel = 'No Workshop Found';
+        this.invalidCoupon = 'Cart Page';
+
+        this.init = function() {
+            var overAllFunnelTrigger = this.logicForOverAllFunnelTrigger();
+            if(overAllFunnelTrigger.trigger == true) {
+                this.triggerOverAllFunnel(overAllFunnelTrigger);
+            }
+            var classRoomFunnelTrigger = this.logicForClassRoomFunnelTrigger();
+            if(classRoomFunnelTrigger.trigger == true) {
+                this.triggerClassRoomFunnel(classRoomFunnelTrigger);
+            }
+            var onlineFunnelTrigger = this.logicForOnlineFunnelTrigger();
+            if(onlineFunnelTrigger.trigger == true) {
+                this.triggerOnlineFunnel(onlineFunnelTrigger);
+            }
+            this.gaFireOnCoursePage();
+            this.gaFireOnCoursePageNoWorkshop();
+            this.gaFireOnCourseListSearchTagDetect();
+        }
+
+        this.logicForOverAllFunnelTrigger = function() {
+            var args = new Array();
+            args.isArray = false;
+            args.trigger = false;
+
+            if('1' == true) {
+                var argumentArray = '[{"overAllPageActionForGa":"Payment Page","overAllPageLabelForGa":"Java Certification Training"}]';
+                var t = '';
+                for(var i = 0; typeof argumentArray[i] != 'undefined'; i++) {
+
+                    var temp = new Array();
+                    if(typeof argumentArray[i]['overAllPageActionForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['funnelAction'] = argumentArray[i]['overAllPageActionForGa'];
+                    } else {
+                        temp['funnelAction'] = '';
+                    }
+
+                    if(typeof argumentArray[i]['overAllPageLabelForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['label'] = argumentArray[i]['overAllPageLabelForGa'];
+                    } else {
+                        temp['label'] = '';
+                    }
+
+                    if(typeof argumentArray[i]['overAllPageValueForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['value'] = argumentArray[i]['overAllPageValueForGa'];
+                    } else {
+                        temp['value'] = '';
+                    }
+
+                    args.push(temp);
+                }
+                args.isArray = true;
+            } else {
+                args.funnelAction = '';
+                args.label = '';
+                args.value = '';
+                if(args.funnelAction != '' || args.label != '' || args.value != '') {
+                    args.trigger = true;
+                }
+            }
+            return args;
+        }
+        this.logicForClassRoomFunnelTrigger = function() {
+            var args = new Array();
+            args.isArray = false;
+            args.trigger = false;
+
+            if('1' == true) {
+                var argumentArray = '[{"classRoomPageActionForGa":"Payment Page","classRoomPageLabelForGa":"Java Certification Training"}]';
+                var t = '';
+                for(var i = 0; typeof argumentArray[i] != 'undefined'; i++) {
+
+                    var temp = new Array();
+                    if(typeof argumentArray[i]['classRoomPageActionForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['funnelAction'] = argumentArray[i]['classRoomPageActionForGa'];
+                    } else {
+                        temp['funnelAction'] = '';
+                    }
+
+                    if(typeof argumentArray[i]['classRoomPageLabelForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['label'] = argumentArray[i]['classRoomPageLabelForGa'];
+                    } else {
+                        temp['label'] = '';
+                    }
+
+                    if(typeof argumentArray[i]['classRoomPageValueForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['value'] = argumentArray[i]['classRoomPageValueForGa'];
+                    } else {
+                        temp['value'] = '';
+                    }
+
+                    args.push(temp);
+                }
+                args.isArray = true;
+            } else {
+                args.funnelAction = '';
+                args.label = '';
+                args.value = '';
+                if(args.funnelAction != '' || args.label != '' || args.value != '') {
+                    args.trigger = true;
+                }
+            }
+            return args;
+        }
+        this.logicForOnlineFunnelTrigger = function() {
+            var args = new Array();
+            args.isArray = false;
+            args.trigger = false;
+
+            if('1' == true) {
+                var argumentArray = '[]';
+                var t = '';
+                for(var i = 0; typeof argumentArray[i] != 'undefined'; i++) {
+
+                    var temp = new Array();
+                    if(typeof argumentArray[i]['onlinePageActionForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['funnelAction'] = argumentArray[i]['onlinePageActionForGa'];
+                    } else {
+                        temp['funnelAction'] = '';
+                    }
+
+                    if(typeof argumentArray[i]['onlinePageLabelForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['label'] = argumentArray[i]['onlinePageLabelForGa'];
+                    } else {
+                        temp['label'] = '';
+                    }
+
+                    if(typeof argumentArray[i]['onlinePageValueForGa'] != 'undefined') {
+                        args.trigger = true;
+                        temp['value'] = argumentArray[i]['onlinePageValueForGa'];
+                    } else {
+                        temp['value'] = '';
+                    }
+
+                    args.push(temp);
+                }
+                args.isArray = true;
+            } else {
+                args.funnelAction = '';
+                args.label = '';
+                args.value = '';
+                if(args.funnelAction != '' || args.label != '' || args.value != '') {
+                    args.trigger = true;
+                }
+            }
+            return args;
+        }
+        this.triggerOverAllFunnel = function(args) {
+            if(args.trigger) {
+                temp = new Array();
+                if(args.isArray) {
+                    for(var i = 0; typeof args[i] != 'undefined'; i++) {
+                        if(!isNaN(args[i].value) && (args[i].value === 0 || args[i].value > 0)) {
+                            var value = args[i].value;
+                        } else {
+                            var value = 0;
+                        }
+                        temp.push(['_trackEvent', this.overAllFunnelString, args[i].funnelAction, args[i].label, value, true]);
+                        _gaq.push(['_trackEvent', this.overAllFunnelString, args[i].funnelAction, args[i].label, value, true]);
+                    }
+                } else {
+                    if(!isNaN(args.value) && (args.value === 0 || args.value > 0)) {
+                        var value = args.value;
+                    } else {
+                        var value = 0;
+                    }
+                    temp.push(['_trackEvent', this.overAllFunnelString, args.funnelAction, args.label, value, true]);
+                    _gaq.push(['_trackEvent', this.overAllFunnelString, args.funnelAction, args.label, value, true]);
+                }
+                if(printGaInConsole) {
+                    console.log(temp);
+                }
+            }
+        }
+        this.triggerCustomFunnel = function(args) {
+            if(args.trigger) {
+                temp = new Array();
+                if(args.isArray) {
+                    for(var i = 0; typeof args[i] != 'undefined'; i++) {
+                        if(!isNaN(args[i].value) && (args[i].value === 0 || args[i].value > 0)) {
+                            var value = args[i].value;
+                        } else {
+                            var value = 0;
+                        }
+                        var noninteractiveness = true;
+                        if(typeof args[i].noninteractiveness != 'undefined' && (args[i].noninteractiveness == true || args[i].noninteractiveness == false)) {
+                            noninteractiveness = args[i].noninteractiveness;
+                        }
+                        _gaq.push(['_trackEvent', args[i].funnelString, args[i].funnelAction, args[i].label, value, noninteractiveness]);
+                        temp.push(['_trackEvent', args[i].funnelString, args[i].funnelAction, args[i].label, value, noninteractiveness]);
+                    }
+                } else {
+                    if(!isNaN(args.value) && (args.value === 0 || args.value > 0)) {
+                        var value = args.value;
+                    } else {
+                        var value = 0;
+                    }
+                    var noninteractiveness = true;
+                    if(typeof args.noninteractiveness != 'undefined' && (args.noninteractiveness == true || args.noninteractiveness == false)) {
+                        noninteractiveness = args.noninteractiveness;
+                    }
+                    temp.push(['_trackEvent', args.funnelString, args.funnelAction, args.label, value, noninteractiveness]);
+                    _gaq.push(['_trackEvent', args.funnelString, args.funnelAction, args.label, value, noninteractiveness]);
+                }
+                if(printGaInConsole) {
+                    console.log(temp);
+                }
+            }
+        }
+        this.triggerClassRoomFunnel = function(args) {
+            if(args.trigger) {
+                tempClass = new Array();
+                if(args.isArray) {
+                    for(var i = 0; typeof args[i] != 'undefined'; i++) {
+                        if(!isNaN(args[i].value) && (args[i].value === 0 || args[i].value > 0)) {
+                            var value = args[i].value;
+                        } else {
+                            var value = 0;
+                        }
+                        _gaq.push(['_trackEvent', this.classRoomFunnelString, args[i].funnelAction, args[i].label, value, true]);
+                        tempClass.push(['_trackEvent', this.classRoomFunnelString, args[i].funnelAction, args[i].label, value, true]);
+                    }
+                } else {
+                    if(!isNaN(args.value) && (args.value === 0 || args.value > 0)) {
+                        var value = args.value;
+                    } else {
+                        var value = 0;
+                    }
+                    tempClass.push(['_trackEvent', this.classRoomFunnelString, args.funnelAction, args.label, value, true]);
+                    _gaq.push(['_trackEvent', this.classRoomFunnelString, args.funnelAction, args.label, value, true]);
+                }
+                if(printGaInConsole) {
+                    console.log(tempClass);
+                }
+            }
+        }
+        this.triggerOnlineFunnel = function(args) {
+            if(typeof args.trigger != 'undefined' && args.trigger) {
+                tempOnline = new Array();
+                if(typeof args.isArray != 'undefined' && args.isArray) {
+                    for(var i = 0; typeof args[i] != 'undefined'; i++) {
+                        if(!isNaN(args[i].value) && (args[i].value === 0 || args[i].value > 0)) {
+                            var value = args[i].value;
+                        } else {
+                            var value = 0;
+                        }
+                        _gaq.push(['_trackEvent', this.onlineFunnelString, args[i].funnelAction, args[i].label, value, true]);
+                        tempOnline.push(['_trackEvent', this.onlineFunnelString, args[i].funnelAction, args[i].label, value, true]);
+                    }
+                } else {
+                    if(!isNaN(args.value) && (args.value === 0 || args.value > 0)) {
+                        var value = args.value;
+                    } else {
+                        var value = 0;
+                    }
+
+                    tempOnline.push(['_trackEvent', this.onlineFunnelString, args.funnelAction, args.label, value, true]);
+                    _gaq.push(['_trackEvent', this.onlineFunnelString, args.funnelAction, args.label, value, true]);
+                }
+                if(printGaInConsole) {
+                    console.log(tempOnline);
+                }
+            }
+        }
+
+
+        this.eventsOverallOnTrainingType = function (courseType) {
+            var args = new Array();
+            args.trigger =true;
+            args.funnelAction = 'Training Type';
+            args.label = courseType;
+            args.value = '';
+            this.triggerOverAllFunnel(args);
+        }
+
+        this.eventsClassRoomOnTrainingType = function () {
+            var args = new Array();
+            args.trigger =true;
+            args.funnelAction = 'Course Page';
+            args.label = course_name;
+            args.value = '';
+            this.triggerClassRoomFunnel(args);
+        }
+
+        this.eventsOnlineOnTrainingType = function () {
+            var args = new Array();
+            args.trigger =true;
+            args.funnelAction = 'Course Page';
+            args.label = course_name;
+            args.value = '';
+            this.triggerOnlineFunnel(args);
+        }
+
+        this.gaEventsFireForError = function() {
+            var args = new Array();
+            args.trigger =true;
+            args.funnelString = 'Error';
+            args.funnelAction = '';
+            args.label = '';
+            args.value = '';
+            this.triggerCustomFunnel(args);
+        }
+
+        this.gaFireOnCoursePage = function() {
+            
+
+        }
+
+        this.gaFireOnCoursePageNoWorkshop = function() {
+                    }
+        this.gaFireOnCoursePageNoWorkshopFormSubmit = function() {
+
+                var args = new Array();
+                args.trigger =true;
+                args.funnelString = this.noWorkshopFoundFunnel;
+                args.funnelAction = 'Form Submit';
+                args.label = '';
+                args.value = '';
+                args.noninteractiveness = false;
+                this.triggerCustomFunnel(args);
+        }
+
+        this.gaFireOnCourseListSearchTagDetect = function() {
+
+                var keyword = '';
+                        }
+        this.gaFireOnCourseListSearchTagCounter = function(rank) {
+
+                var keyword = '';
+                        }
+
+        this.gaFireOnCartPageInvalidCouponSubmit = function(invalidCouponLabel) {
+
+                var args = new Array();
+                args.trigger =true;
+                args.funnelString = this.invalidCoupon;
+                args.funnelAction = 'Invalid Coupon';
+                args.label = invalidCouponLabel;
+                args.value = '';
+                this.triggerCustomFunnel(args);
+        }
+
+        this.gaFireInteractiveEvents = function(keyInRedmineArray, label) {
+
+                var args = new Array();
+                args.trigger =true;
+                args.funnelString = this.eventsRedmine1094[keyInRedmineArray].category;
+                args.funnelAction = this.eventsRedmine1094[keyInRedmineArray].action;
+                args.label = '';
+                if(this.eventsRedmine1094[keyInRedmineArray].labelRequired == true) {
+                    if(typeof this.eventsRedmine1094[keyInRedmineArray].labelValue != 'undefined') {
+                        label = this.eventsRedmine1094[keyInRedmineArray].labelValue;
+                    }
+                    if(typeof label == 'undefined') {
+                        if(printGaInConsole) {
+                            console.log('label not proper for ' + keyInRedmineArray);
+                        }
+                   }
+                    args.label = label;
+                }
+
+                if(this.eventsRedmine1094[keyInRedmineArray].labelRequired == false && typeof label != 'undefined') {
+                    if(printGaInConsole) {
+                        console.log('label not proper for ' + keyInRedmineArray);
+                    }
+                }
+                args.value = '';
+                args.noninteractiveness = this.eventsRedmine1094[keyInRedmineArray].noninteractiveness;
+                this.triggerCustomFunnel(args);
+        }
+        this.gaFireOnCartProceedClick = function() {
+                    }
+    }
+</script>
+
+
+<script>
+
+    function downloadJsOnLoad() {
+        setTimeout(function() {
+            var gaEvents = new gaEventsTracker;
+            gaEvents.init();
+        }, 5000);
+    }
+
+	if (window.addEventListener)
+		window.addEventListener("load", downloadJsOnLoad(), false);
+	else if (window.attachEvent)
+		window.attachEvent("onload", downloadJsOnLoad());
+	else window.onload = downloadJsOnLoad();
+
+//        var gaEvents = new gaEventsTracker;
+//        gaEvents.init();
+    var gdprCookie = '_gdpr_user_consent';
+    var breakupJson = '';
+    var itemTotalPrice = '15338.82';
+    var isZestMoneyFlag = ''
+
+</script>
+
+
+
+        </div>
+        <!-- free trail popup -->
+                <!-- footer start -->
+        
+        <!-- footer end -->
+        <!-- body content end -->
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/external/frameworks/angular.min.1503293258.js"></script>
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/action/checkout/details/CheckoutDetailsController.1548310686.js"></script>
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/external/plugins/jquery.corner.1503293258.js"></script>
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/external/plugins/jquery.mask.1503293258.js"></script>
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/common/default.1544177438.js"></script>
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/action/checkout/details/default.1540901145.js"></script>
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/common/WebEvents.1549277140.js"></script>
+        <script type="text/javascript" src="https://www.simplilearn.com/static_ssvc/js/common/WebengageController.1544177438.js"></script>
+<script type="text/javascript">
+    var eventsSLURL = 'https://services.simplilearn.com/events/kafka/website-events';
+    var webEngageId = '311c5642';
+    (typeof user_params == 'undefined') && (user_params = {});
+    user_params.sl_order_id = "SMPL_FK78VF9I5ZT";user_params.sl_page_type = "cart";user_params.sl_currency = "INR";user_params.sl_product_price_symbol = "&#8377;";user_params.sl_utm_src = "31204797.1559884004.1.1.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not provided)";user_params.sl_payment_option_chosen = null;user_params.sl_product_id = "694";user_params.sl_product_name = "Java Certification Training Online Classroom Flexi-Pass";user_params.sl_product_image = "https:\/\/www.simplilearn.com\/ice9\/line_icons\/WebApp_Java-EE-7.svgz";user_params.sl_product_type = "course";user_params.sl_product_training_type = "Online Classroom Flexi-Pass";user_params.sl_product_category = "";user_params.sl_product_category_id = "";user_params.sl_cart_items = [{"id":"694","name":"Java Certification Training Online Classroom Flexi-Pass","description":" - 1","price":"15338.82","basePrice":"12999.0000","display_total_price":"12999.00","quantity":1,"isEarlyBird":0,"type":"classroom","trainingType_id":"9","accessDays":"90","productTypeId":"1","productTypeName":"course","actual_name":"Java Certification Training","priceId":"9733","billingType":1,"img_url":"https:\/\/www.simplilearn.com\/ice9\/line_icons\/WebApp_Java-EE-7.svgz","course_url":"\/mobile-and-software-development\/java-javaee-soa-development-training","training_type_txt":"Online Classroom Flexi-Pass","messageTT":"","availedFT":"AVAILED,DENIED","primary_label_id":"25","primary_label_name":"Software Development","cateforyInfo":{"25":"Software Development"}}];user_params.sl_cart_value = 12999;user_params.sl_discount_coupon_applied = "";user_params.sl_final_cart_value = "15338.82";user_params.sl_discount_value = "";user_params.sl_product_price_osl = "";user_params.sl_product_price_lvc = "12999.00";user_params.sl_product_price_class = "";    
+            setRootPath('https://www.simplilearn.com/secure');
+                $(function () {
+                    //open chat now
+                    //$.getScript('https://server.iad.liveperson.net/hc/24435859/?cmd=mTagRepstate&site=24435859&buttonID=13&divID=lpButDivID-1316506592981&bt=1&c=1');
+                    $('.chat_now_link').click(function () {
+                        _ss_track.api.live_chat_click();
+                        return false;
+                    });
+                })
+        </script>
+        <script id='_webengage_script_tag' type='text/javascript'>
+            var webengage;!function(w,e,b,n,g){function o(e,t){e[t[t.length-1]]=function(){r.__queue.push([t.join("."),arguments])}}var i,s,r=w[b],z=" ",l="init options track screen onReady".split(z),a="feedback survey notification".split(z),c="options render clear abort".split(z),p="Open Close Submit Complete View Click".split(z),u="identify login logout setAttribute".split(z);if(!r||!r.__v){for(w[b]=r={__queue:[],__v:"6.0",user:{}},i=0;i < l.length;i++)o(r,[l[i]]);for(i=0;i < a.length;i++){for(r[a[i]]={},s=0;s < c.length;s++)o(r[a[i]],[a[i],c[s]]);for(s=0;s < p.length;s++)o(r[a[i]],[a[i],"on"+p[s]])}for(i=0;i < u.length;i++)o(r.user,["user",u[i]]);setTimeout(function(){var f=e.createElement("script"),d=e.getElementById("_webengage_script_tag");f.type="text/javascript",f.async=!0,f.src=("https:"==e.location.protocol?"https://ssl.widgets.webengage.com":"http://cdn.widgets.webengage.com")+"/js/webengage-min-v-6.0.js",d.parentNode.insertBefore(f,d)})}}(window,document,"webengage");
+            webengage.init(webEngageId);
+        </script>
+        <script type="text/javascript">
+            //$("[title]").tooltip();
+        </script>
+        <script type="text/javascript">
+            var baseUrl = 'https://www.simplilearn.com/secure';
+            var ice9ApiUrl = 'https://www.simplilearn.com/api/ssvc/';
+						var ice9V1ApiUrl = 'https://www.simplilearn.com/api/v1/index/nocache';
+            var frontendUrl = 'https://www.simplilearn.com';
+            var pSessionId = 'j1f6dfua2bfespdfodrpc5iao1';
+            var tokenVal = '8c8d52baac85798cdc61cf5775d8bbf9bfb70062199bee94572fdd2742e5161b';
+            var isPaymentFormOpen = 0;
+            var totalPriceStr = "";
+            var _isCustomPayment = 0;
+            var usCountryId = '34';
+            var usCountrySymbol = '$';
+            var isB2b = '';
+                var countryId = "IN";
+
+        $( document ).ready(function() {
+            if(isB2b){
+                $('.hide-for-b2b').hide();
+            }
+        });
+        </script>
+
+            <script>
+                            if (typeof dataLayer == 'undefined') {
+                                dataLayer = [];
+                            }
+                            dataLayer.push({'countryCode': 'IN'});
+            </script>
+        <script type="text/javascript">
+function downloadGaAtOnload() {
+    //GTM init
+    setTimeout(function() {
+        gtmLoadScript();
+    }, 5000);
+}
+if (window.addEventListener)
+            window.addEventListener("load", downloadGaAtOnload, false);
+    else if (window.attachEvent)
+        window.attachEvent("onload", downloadGaAtOnload);
+    else window.onload = downloadGaAtOnload;
+</script>
+
+            <script>
+
+                function gtmLoadScript() {
+                    (function (w, d, s, l, i) {
+                            w[l] = w[l] || [];
+                            w[l].push({'gtm.start':
+                                        new Date().getTime(), event: 'gtm.js'});
+                            var f = d.getElementsByTagName(s)[0],
+                                    j = d.createElement(s), dl = l != 'user_params' ? '&l=' + l : '';
+                            j.async = true;
+                            j.src =
+                                    '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+                            f.parentNode.insertBefore(j, f);
+                        })(window, document, 'script', 'dataLayer', 'GTM-WTL3CF');
+                }
+                </script>
+
+        
+        <script type="text/javascript">
+            if (typeof dataLayer == 'undefined') {
+                dataLayer = [];
+            }
+            var adElementData = [{"event":"adElement","productId":"694","quantity":1,"cartValue":"12,999.00","trainingType":"classroom","currency":"Rs.","productType":1,"userType":"new","depth":3}];
+            if (typeof adElementData != 'undefined' && adElementData.length > 0) {
+                setTimeout(function () {
+                    timeoutForAdElement = 0;
+                    var adElementPushToDataLayer = function (adData, timeout) {
+                        if (typeof dataLayer == 'undefined') {
+                            dataLayer = [];
+                        }
+                        setTimeout(function () {
+                            dataLayer.push(adData);
+                        }, timeout);
+                    }
+                    for (var adData in adElementData) {
+                        if (typeof adElementData[adData].event != 'undefined' && typeof adElementData[adData].depth != 'undefined') {
+                            var temp = new Object();
+                            for (var key in adElementData[adData]) {
+                                temp[key] = adElementData[adData][key];
+                            }
+                            adElementPushToDataLayer(temp, timeoutForAdElement);
+                            timeoutForAdElement += 500;
+                        }
+                    }
+                    ;
+                }
+                , 5000
+                        );
+            }
+
+        </script>
+    <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"6711deac76","applicationID":"13571530","transactionName":"ZF0BMktTCEoDBUELW10XNhRQHQ9XBgNNTERbSA==","queueTime":0,"applicationTime":83,"atts":"SBoCRANJG0Q=","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+    <script type="text/javascript">
+        var _taq = {"id": "a6ac3e6e-c86b-4536-aedd-105a3df85b16", "events": []};
+        var ta = document.createElement('script');
+        ta.type = 'text/javascript';
+        ta.async = true;
+        ta.id = "__ta";
+        ta.src = '//cdn-jp.gsecondscreen.com/static/tac.min.js';
+        var fs = document.getElementsByTagName('script')[0];
+        fs.parentNode.insertBefore(ta, fs);
+    </script>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org">
+<head>
+ <title>Home</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+</head>
+<body>
+ 
+  <h2><center>Welcome to Mentor on Demand</center></h2><br>
+  
+  	<div class="container">
+  	<div class="row">
+
+             <div class="col-md-2 field-label-responsive">
+                 
+             </div>
+             <div class="col-md-6">
+                 <div class="form-group">
+                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                         <a th:href="@{/search}"><input type=button value='ALL COURSES'></a>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-3">
+                 <div class="form-group">
+                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                         <a th:href="@{/login}">Login</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+                         <a th:href="@{/signup}">Signup</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+  	
+  	
+  <p>
+    
+   <!--  <span class="align-right">
+       <a th:href="@{/login}">Login</a>
+    </span>
+</p>
+
+
+  <div class="right">
+        <a th:href="@{/logout}">Sign out</a>
+    </div>
+  
+   -->
+  
+  <!-- <span class ="align-right"> style="text-align:right">Login</p>
+  	<a th:href="@{/login}">Login</a>
+  </span> -->
+  <!-- <a th:href="@{/logout}">Sign out</a> -->
+ </div>
+ <div class="container">
+        <h1>
+        <center>
+            <!-- include image from static resources -->
+            <img alt="education technology logo" src="/img/educational-technology.png" />
+          </center>
+        </h1>
+    </div>
+    
+    
+</body>
+</html>
