@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml"
+ xmlns:th="http://www.thymeleaf.org">
+<head>
+ <title>Sign up</title>
+ <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+ <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.min.css">
+</head>
+<body>
+ <div class="container">
+     <form class="form-horizontal" role="form" method="POST" th:action="@{/signup}" th:object="${user}">
+      
+         
+         <div class="row">
+
+             <div class="col-md-3 field-label-responsive">
+                 <img class="icon_card" ng-src="https://www.simplilearn.com/ice9/line_icons/WebApp_Java-EE-7.svgz" alt="Java Certification Training" src="https://www.simplilearn.com/ice9/line_icons/WebApp_Java-EE-7.svgz" width="80">
+             </div>
+             <div class="col-md-6">
+                 <div class="form-group">
+                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                         
+                         <h2 class="default-text-bold ng-binding" itemprop="name">Java Certification Training</h2><br>
+			<p>The <b>Java</b> practice test is free of cost and a representation of the <b>Java</b> exam. The <b>Java</b> test paper contains 50 MCQs which are in accordanc...</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     <div class="row">
+
+             <div class="col-md-3 field-label-responsive">
+                 <img class="icon_card" src="https://www.simplilearn.com/ice9/course_images/angular_training_simplilearn.svgz" alt="Angular Training"  width="80">
+             </div>
+             <div class="col-md-6">
+                 <div class="form-group">
+                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                         
+                         <h2 class="default-text-bold ng-binding" itemprop="name">Angular Training</h2><br>
+			<p> By the end of angular online training course, you will comprehend the following:Understand the design of single-page applications an...</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+        
+         <div class="row">
+
+             <div class="col-md-3 field-label-responsive">
+                 <img class="icon_card" src="https://www.simplilearn.com/ice9/course_images/bundle313x225/Big-Data-Hadoop-Architect.svgz" alt="Angular Training"  width="80">
+             </div>
+             <div class="col-md-6">
+                 <div class="form-group">
+                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                         
+                         <h2 class="default-text-bold ng-binding" itemprop="name">Big Data Architect</h2><br>
+			<p>  The world is getting increasingly digital, and this means big data is here to stay. </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+
+<div class="row">
+
+             <div class="col-md-3 field-label-responsive">
+                 <img class="icon_card" src="https://www.simplilearn.com/ice9/course_images/bundle313x225/Automation-Testing-Masters-Program-icon.svgz" alt="Angular Training"  width="80">
+             </div>
+             <div class="col-md-6">
+                 <div class="form-group">
+                     <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+                         
+                         <h2 class="default-text-bold ng-binding" itemprop="name">Automation Testing Masters Program</h2><br>
+			<p> The Automation Testing Master�s Program is designed to give you complete knowledge of software testing technologies </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+ </div>
+</body>
+</html>
